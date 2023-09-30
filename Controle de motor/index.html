@@ -1,0 +1,129 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <meta  name="viewport" content="width=device-width, user-scalable=no"
+    <meta http-equiv="refresh" content="5" charset="utf-8">
+    <title>Controle de potência</title>
+
+    <style>
+      body{
+        font-family: monospace;
+        background-color: rgba(20,21,38,1);
+      }
+      .top_bar{
+        width:auto;
+        height: 100px;
+        background-color: aqua;
+        padding: auto;
+        border: 5px solid #5555;
+        border-color: rgb(241, 5, 5);
+        border-radius: 5px;
+        border: 10px;
+        margin: auto;
+        overflow: hidden;
+        user-select: none;
+
+        color: rgb(66, 66, 66);
+        text-align: center;
+        font-size: 400%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+      }
+      h1{
+        color: antiquewhite;
+        text-align: center;
+        margin: 50px;
+        font-size: 18px;
+      }
+      .BarraCircular{
+        width: 200;
+        height: 200;
+        background-color: rgba(20,21,38,1);
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+
+      }
+      .cont{
+        height: 100;
+        width: 200;
+      }
+      .Central_Circle{
+        width: 150px;
+        height: 150px;
+        background-color: rgba(20,21,38,1);
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+        margin: -175px auto 50px;
+      }
+      .Retangle{
+        width: 200px;
+        height: 100px;
+        background-color: rgba(20,21,38,1);
+        position: relative;
+        margin: -125px auto 50px;
+      }
+      .botão{
+        padding: auto;
+        border: 5px solid #5555;
+        width: 150;
+        height: 150;
+        background-color: rgba(20,21,38,1);
+        margin: auto;
+        border-radius: 20%;
+        overflow: hidden;
+        font-size: 130px;
+        text-align: center;
+        color: rgb(13, 241, 222);
+        user-select: none;
+        cursor:pointer;
+      }
+      .botão:hover{
+        background: rgb(74, 74, 77);
+        transition: background 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="top_bar">
+      CONTROLE DE POTÊNCIA
+    </div>
+  
+    <h1>THROTTLE</h1>
+    <div class="BarraCircular" style="transform: rotate(90deg);">
+      <div class="cont" style="background-color: rgb(74, 74, 77);"></div>
+      <div class="cont" style="background-color:rgb(0, 255, 179);"></div>
+    </div>
+    <div class="Central_Circle"></div>
+    <div class="Retangle"></div>
+    <h1 style="font-size:22px;position: relative; margin: -125px auto 50px;">50 %</h1>
+
+    <h1>RPM</h1>
+    <div class="BarraCircular" style="transform: rotate(90deg);">
+      <div class="cont" style="background-color: rgb(74, 74, 77);"></div>
+      <div class="cont" style="background-color: rgb(0, 255, 179);"></div>
+    </div>
+    <div class="Central_Circle"></div>
+    <div class="Retangle"></div>
+    <h1 style="font-size:22px;position: relative; margin: -125px auto 50px;">5000 RPM</h1>
+
+    <center>
+    <div>
+      <a href=\"/+\">
+        <button class="botão">+</button>
+      </a>
+      <a href=\"/-\">
+        <button class="botão">-</button>
+      </a>
+    </div>
+
+    <h1 style="font-size:22px;position: relative; margin: 5px auto 50px;">CONTROLE DE RPM MÁX</h1>
+
+    </center>
+
+
+  </body>
+  
+</html>
